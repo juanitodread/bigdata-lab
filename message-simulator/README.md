@@ -1,8 +1,9 @@
-# sbt-layout-project
-Initial SBT project configuration for Scala __2.12.x__. (Requires JDK 8 but is better using the latest JDK version (10))
+# Message Simulator
+Utility project to generate random messages and publish them in a specified destiny. 
 
-You can verify other Scala versions in branches.
+Currently, the simulator only supports Kafka (hardcoded config).
 
 ## How to use it
-1. Clone the repo according your Scala version.
-2. Run init.sh ```$ sh init.sh <your-repo-name>```
+There is a *fat jar* you can use to run the simulator.
+
+`java -jar Simulator-assembly-0.0.1.jar <message-number> <topic>`
